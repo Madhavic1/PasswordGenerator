@@ -1,6 +1,8 @@
  //var passwordField = document.querySelector("#password");
   // Javascript validations to generate a new random password-->
 
+  var clipBoardBtn =  document.getElementById("copy-to-clipboard");
+
 function makePassword(length,characters) {
     var result           = '';
     //var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -73,6 +75,27 @@ function makePassword(length,characters) {
  }
 
 
+ //copy Password to the clipboard
+
+ function copyToClipboard() {
+
+    event.preventDefault();
+    /* Get the text field */
+    var copyText = document.getElementById("password");
+  
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+  }
+
+
+
 function generatePassword(){  // this is the main one i am using
     event.preventDefault();
    // passwordField.textContent = "";
@@ -117,6 +140,10 @@ function generatePassword(){  // this is the main one i am using
 
 
         document.getElementById("password").textContent = currentPassword;
+
+        document.getElementById("copy-to-clipboard").disabled = false;
+        
+       
 
     } //end of if
 
