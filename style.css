@@ -1,0 +1,8 @@
+/* to add styling for the page header "Password Generator"*/
+#mainHeading{
+text-align: center;
+}
+
+#password{
+    text-align : center;
+}
