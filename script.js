@@ -10,7 +10,6 @@ function makePassword(length,characters) {
     for ( var i = 0; i < length; i++ ) {
        result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
-    alert("result==="+result);
     return result;
 
  }
@@ -21,19 +20,16 @@ function makePassword(length,characters) {
 
      while((length < 8) || (length > 128) || isNaN(length))
      {
-       //  alert("while start");
          if(length===null)
          {
              return length;
          }
          if(length < 8 || length > 128){
-       //      alert("if 1");
              length = prompt("Length must be between 8 and 128 characters. Please enter valid length!!");
          }
 
          if(isNaN(length))
          {
-       //     alert("if 2");
              length = prompt("Length must be a number in the range of 8 and 128 !!");
          }
      }
@@ -124,7 +120,7 @@ function generatePassword(){  // this is the main one i am using
 
             if((!spcl_char) && (!numeric_char) && (!lower_char) && (!upper_char))
             {
-                alert("Chose atleast one of the character types");
+                alert("Choose atleast one of the character types");
             }
          }
         target_string = formTargetCharacterString(spcl_char,numeric_char,lower_char,upper_char);
