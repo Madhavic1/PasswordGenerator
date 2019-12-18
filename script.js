@@ -1,3 +1,4 @@
+ //var passwordField = document.querySelector("#password");
   // Javascript validations to generate a new random password-->
 
 function makePassword(length,characters) {
@@ -73,8 +74,8 @@ function makePassword(length,characters) {
 
 
 function generatePassword(){  // this is the main one i am using
-
-
+    event.preventDefault();
+   // passwordField.textContent = "";
     var spcl_char=false;
     var numeric_char=false;
     var lower_char=false;
@@ -111,14 +112,16 @@ function generatePassword(){  // this is the main one i am using
         //(spcl_char_string+num_char_string+upper_case_string+lower_case_string);
 
 
-        alert("the final target string is "+target_string);
 
         currentPassword =  makePassword(password_length,target_string);
 
-        alert("currentPassword "+currentPassword);
 
-      
+        document.getElementById("password").textContent = currentPassword;
 
     } //end of if
 
-}
+
+} //end of generatePassword function
+
+
+
