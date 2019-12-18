@@ -91,7 +91,7 @@ function makePassword(length,characters) {
     document.execCommand("copy");
   
     /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
+    alert("Copied the password: " + copyText.value);
   }
 
 
