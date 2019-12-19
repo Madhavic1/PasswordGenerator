@@ -50,9 +50,11 @@ Creates a unique and secured password.
     * MDN: JavaScript
 
 ###  The URL of the deployed application
-
+    https://madhavic1.github.io/PasswordGenerator/
 
 ### The URL of the GitHub repository
+    https://github.com/Madhavic1/PasswordGenerator.git
+
 
 
  
