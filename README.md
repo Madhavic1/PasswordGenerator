@@ -2,6 +2,7 @@
 Creates a unique and secured password.
 
 ## table of contents
+  * Link to the Deployed application
   * Introduction / General Information
   * Languages used
   * Installation
@@ -10,6 +11,8 @@ Creates a unique and secured password.
   * The URL of the deployed application
   * The URL of the GitHub repository
   
+  ### Link to the Deployed application
+  https://madhavic1.github.io/PasswordGenerator/
 
   ### Introducion (Aim of the project) / General Information:
     This application  generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.The user will be prompted to choose from the following password criteria:
